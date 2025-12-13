@@ -127,7 +127,7 @@ feature -- Test: Serialization
 		do
 			create codec.make
 			create value.make_object
-			value.put_string ("key", "value")
+			value.with_string ("key", "value").do_nothing
 			assert_string_contains ("json output", codec.to_json (value), "key")
 		end
 

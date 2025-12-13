@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-22-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-22-0 http://www.eiffel.com/developers/xml/configuration-1-22-0.xsd" name="simple_codec" uuid="C9F8A7B6-5D4E-3C2B-1A0F-E9D8C7B6A5F4" library_target="simple_codec">
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-23-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-23-0 http://www.eiffel.com/developers/xml/configuration-1-23-0.xsd" name="simple_codec" uuid="C9F8A7B6-5D4E-3C2B-1A0F-E9D8C7B6A5F4" library_target="simple_codec">
 	<description>Unified codec API for JSON, TOML, YAML, and XML</description>
 	<target name="simple_codec">
 		<root all_classes="true"/>
@@ -19,19 +19,18 @@
 			<void_safety support="all"/>
 		</capability>
 		<library name="base" location="$ISE_LIBRARY\library\base\base.ecf"/>
-		<library name="time" location="$ISE_LIBRARY\library\time\time.ecf"/>
 		<library name="simple_json" location="$SIMPLE_JSON\simple_json.ecf"/>
 		<library name="simple_toml" location="$SIMPLE_TOML\simple_toml.ecf"/>
-		<library name="simple_yaml" location="$SIMPLE_YAML\simple_yaml.ecf"/>
 		<library name="simple_xml" location="$SIMPLE_XML\simple_xml.ecf"/>
+		<library name="simple_yaml" location="$SIMPLE_YAML\simple_yaml.ecf"/>
+		<library name="time" location="$ISE_LIBRARY\library\time\time.ecf"/>
 		<cluster name="src" location=".\src\" recursive="true"/>
 	</target>
 	<target name="simple_codec_tests" extends="simple_codec">
-		<root class="APPLICATION" feature="make"/>
-		<file_rule>
-			<exclude/>
-		</file_rule>
+		<root class="TEST_APP" feature="make"/>
 		<setting name="console_application" value="true"/>
-		<cluster name="testing" location=".\testing\"/>
+		<library name="simple_testing" location="D:\prod\simple_testing\simple_testing.ecf"/>
+		<library name="testing" location="$ISE_LIBRARY\library\testing\testing.ecf"/>
+		<cluster name="tests" location=".\testing\"/>
 	</target>
 </system>
