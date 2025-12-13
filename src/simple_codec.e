@@ -162,7 +162,7 @@ feature -- Parsing
 			content_not_void: a_content /= Void
 		do
 			last_errors.wipe_out
-			if attached json.parse (a_content) as l_json then
+			if attached json.decode (a_content) as l_json then
 				Result := simple_json_to_codec (l_json)
 			else
 				across json.last_errors as ic loop
