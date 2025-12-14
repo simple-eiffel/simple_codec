@@ -1,0 +1,9 @@
+{
+  "name": "simple_codec",
+  "version": "0.1.0",
+  "description": "Unified codec API for JSON, TOML, YAML, and XML",
+  "author": "Larry Rix",
+  "license": "MIT",
+  "category": "data-formats",
+  "keywords": ["encoding", "decoding", "base64", "hex", "url"]
+}
