@@ -23,7 +23,7 @@
 		<library name="simple_toml" location="$SIMPLE_TOML\simple_toml.ecf"/>
 		<library name="simple_xml" location="$SIMPLE_XML\simple_xml.ecf"/>
 		<library name="simple_yaml" location="$SIMPLE_YAML\simple_yaml.ecf"/>
-		<library name="time" location="$ISE_LIBRARY\library\time\time.ecf"/>
+		<library name="simple_datetime" location="$SIMPLE_DATETIME/simple_datetime.ecf"/>
 		<cluster name="src" location=".\src\" recursive="true"/>
 	</target>
 	<target name="simple_codec_tests" extends="simple_codec">
