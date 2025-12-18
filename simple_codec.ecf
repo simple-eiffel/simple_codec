@@ -29,7 +29,7 @@
 	<target name="simple_codec_tests" extends="simple_codec">
 		<root class="TEST_APP" feature="make"/>
 		<setting name="console_application" value="true"/>
-		<library name="simple_testing" location="D:\prod\simple_testing\simple_testing.ecf"/>
+		<library name="simple_testing" location="$SIMPLE_EIFFEL/simple_testing/simple_testing.ecf"/>
 		<library name="testing" location="$ISE_LIBRARY\library\testing\testing.ecf"/>
 		<cluster name="tests" location=".\testing\"/>
 	</target>
