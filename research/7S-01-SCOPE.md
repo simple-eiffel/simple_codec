@@ -1,5 +1,8 @@
 # 7S-01: SCOPE - simple_codec
 
+
+**Date**: 2026-01-23
+
 **Status:** BACKWASH (reverse-engineered from implementation)
 **Date:** 2026-01-23
 **Library:** simple_codec
