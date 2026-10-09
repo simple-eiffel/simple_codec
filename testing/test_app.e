@@ -205,7 +205,7 @@ feature -- Tests
 				assert ("age", l_result.integer_item ("age") = 30)
 				print ("PASSED%N")
 			else
-				print ("FAILED: " + codec.errors_as_string + "%N")
+				print ({STRING_32} "FAILED: " + codec.errors_as_string + {STRING_32} "%N")
 			end
 		end
 
@@ -228,7 +228,7 @@ feature -- Tests
 				assert ("age", l_result.integer_item ("age") = 30)
 				print ("PASSED%N")
 			else
-				print ("FAILED: " + codec.errors_as_string + "%N")
+				print ({STRING_32} "FAILED: " + codec.errors_as_string + {STRING_32} "%N")
 			end
 		end
 
@@ -251,7 +251,7 @@ feature -- Tests
 				assert ("age", l_result.integer_item ("age") = 30)
 				print ("PASSED%N")
 			else
-				print ("FAILED: " + codec.errors_as_string + "%N")
+				print ({STRING_32} "FAILED: " + codec.errors_as_string + {STRING_32} "%N")
 			end
 		end
 
